@@ -6,8 +6,14 @@ const schema = new mongoose.Schema({
    place: {
     type: String
    },
-   date: {
-    type: String
+   available: {
+    type: Number
+   },
+   price: {
+      type: Number
+   },
+   tag: {
+      type: String
    }
 });
 const ticket = mongoose.model('tickets', schema);

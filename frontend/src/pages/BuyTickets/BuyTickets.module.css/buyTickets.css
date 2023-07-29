@@ -139,9 +139,13 @@ input[type='email'] {
     outline: none;
     background-color: transparent;
     border-radius: 5px;
-    color: #a1a1aa;
+    color: #a1a1aa !important;
     width: 100%;
 
+}
+
+.placeholder-color::placeholder{
+    color: #a1a1aa6c !important;
 }
 
 .calender-isForeigner-email-phone {

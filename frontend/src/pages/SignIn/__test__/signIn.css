@@ -90,6 +90,7 @@ label{
 ::placeholder {
     padding-left: 0.5em;
     opacity: 0.8;
+    color: rgba(0, 0, 0, 1) !important;
 }
 
 .remember-forget-password {

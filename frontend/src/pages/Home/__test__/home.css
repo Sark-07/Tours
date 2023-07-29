@@ -92,6 +92,10 @@ input[type='search'] {
     border-bottom-left-radius: 3px;
 }
 
+input[type='search']::placeholder{
+    color: black !important;
+}
+
 input[type='button'] {
     cursor: pointer;
     width: 25%;

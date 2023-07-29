@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "64c4d0a6a33a974638f171a8"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal",
+  "available": "100",
+  "price": "200",
+  "tag": "Heritage"
+},
+{
+  "_id": {
+    "$oid": "64c4e2b6aa96f1eb7cb088a1"
+  },
+  "city": "Delhi",
+  "place": "Red Fort",
+  "available": "100",
+  "price": "100",
+  "tag": "Historical"
+},
+{
+  "_id": {
+    "$oid": "64c4e324aa96f1eb7cb088a6"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memorial",
+  "available": "300",
+  "price": "50",
+  "tag": "Heritage"
+},
+{
+  "_id": {
+    "$oid": "64c4e394aa96f1eb7cb088ab"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem",
+  "available": "500",
+  "price": "100",
+  "tag": "Educational"
+}]

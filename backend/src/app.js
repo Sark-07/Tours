@@ -5,6 +5,8 @@ const connection = require('../config/connection')
 const authRoutes = require('../routes/authRoute')
 const placesRoutes  = require('../routes/placesRouter')
 const paymentRoute = require('../routes/paymentRoute')
+const bookTicketsRoutes = require('../routes/bookticketsRoute')
+
 const PORT = process.env.PORT || 3000
 const app = express()
 
@@ -20,6 +22,7 @@ app.use(express.urlencoded({extended: false}));
 // middleware for the routes
 app.use('/tours/api/auth', authRoutes)
 app.use('/tours/api', placesRoutes)
+app.use('/tours/api', bookTicketsRoutes)
 app.use('/tours/api', paymentRoute)
 
 // global error handler
