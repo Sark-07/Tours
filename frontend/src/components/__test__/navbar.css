@@ -1,0 +1,71 @@
+/* *,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    list-style: none;
+    text-decoration: none;
+  } */
+nav{
+    z-index: 99;    
+    position: absolute;
+    background: transparent;
+    height: 10vh;
+    width: 100%;
+    padding: 0.5em 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #fff;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.15em;
+    padding: 0.35em 0;
+}
+.logo{
+    font-size: 2.2rem;
+}
+.logo > .logo-icon{
+    font-size: 2.5rem;
+}
+
+.logo:hover{
+    color: aliceblue;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+}
+nav > ul > li{
+    padding: 0.25em;
+}
+li > a{
+    color: #a1a1aa;
+}
+.sign-up-btn{
+    padding: 0.5em 0.75em;
+    background-color: #1ce783;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 8px;
+}
+select{
+    background-color: transparent;
+    color: #a1a1aa;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25em 0;
+    display: flex;
+    justify-content: center;
+}
+option{
+    color: black;
+}

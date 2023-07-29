@@ -1,0 +1,264 @@
+[{
+  "_id": {
+    "$oid": "64c0baaf6c10da26d4fe2c3d"
+  },
+  "city": "Agar",
+  "location": "Taj Mahal",
+  "tag": "Heritage",
+  "liked": "305K",
+  "interested": "100K",
+  "eventhappening": "Cultural Fair",
+  "aboutEvent": "In this fest everyone came acros the nation to show their culture",
+  "recommendation": [
+    "Vintage",
+    "Historical",
+    "Heritage"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "Main Gate (Darwaza-i-Rauza)",
+      "desc": "The grand entrance leading to the Taj Mahal, adorned with intricate designs and inscriptions."
+    },
+    {
+      "title": "Forecourt (Charbagh Garden",
+      "desc": "A spacious garden divided into four quadrants by walkways, symbolizing paradise and providing a stunning view of the Taj Mahal."
+    },
+    {
+      "title": "Mausoleum",
+      "desc": "The central structure, housing the tombs of Emperor Shah Jahan and Mumtaz Mahal. Its majestic white marble façade is the highlight of the Taj Mahal."
+    },
+    {
+      "title": "Minarets",
+      "desc": "Four slender minarets stand at each corner of the mausoleum, adding to the architectural beauty and providing a panoramic view of the surroundings."
+    }
+  ],
+  "overview": "One notable place near the Taj Mahal is Agra Fort. Located just 2.5 kilometers northwest of the Taj Mahal, Agra Fort is a UNESCO World  Heritage site and a magnificent red sandstone fortress. It served as the main residence of the Mughal emperors until the capital moved to Delhi. The fort showcases a blend of Islamic and Hindu architectural styles and houses several impressive structures, including the Diwan-i-Aam (Hall of Public Audience), Diwan-i-Khas (Hall of Private Audience), and the stunning Jahangir Palace. A visit to Agra Fort offers a glimpse into the rich history and grandeur of the Mughal era, making it a must-see attraction for visitors to the Taj Mahal.'",
+  "upcomingEvents": [
+    {
+      "title": "Classical Musical Night",
+      "desc": "Experience the mesmerizing world of classical music during our enchanting musical night. Step into a sophisticated ambiance filled with the allure of tradition and artistic brilliance."
+    },
+    {
+      "title": "Art Exhibition",
+      "desc": "Demonstrate a world class of art and sculpture"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64c0c67a6c10da26d4fe2c43"
+  },
+  "city": "Delhi",
+  "location": "Red Fort",
+  "tag": "Historical",
+  "liked": "159K",
+  "interested": "100K",
+  "overview": "The Red Fort, also known as Lal Qila, is a historic fortress located in Delhi, India. Constructed by Emperor Shah Jahan in the 17th century, it served as the main residence of the Mughal emperors until the mid-19th century. The fort's majestic architecture features red sandstone walls, intricate marble inlays, and imposing gates. Inside, you can explore various structures, including Diwan-i-Aam (Hall of Public Audience), Diwan-i-Khas (Hall of Private Audience), and the beautiful Rang Mahal (Palace of Colors). The fort's significance lies in its representation of Mughal opulence and its role in India's rich historical and cultural heritage.",
+  "eventHappening": "No ongoing Event",
+  "aboutEvent": "We will update further",
+  "recommendation": [
+    "Historical",
+    "Heritage",
+    "Educational"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "Diwan-i-Aam (Hall of Public Audience)",
+      "desc": "A large courtyard where the emperor addressed the public and conducted daily affairs."
+    },
+    {
+      "title": "Diwan-i-Khas (Hall of Private Audience)",
+      "desc": " A beautiful marble hall where the emperor held private meetings and received important dignitaries."
+    },
+    {
+      "title": "Anguri Bagh",
+      "desc": "A beautiful garden divided into geometric patterns with lush greenery and fountains."
+    }
+  ],
+  "upComingEvents": [
+    {
+      "title": "Parade",
+      "desc": "The parade at the Red Fort is showcase a symbol of India's unity, pride, and democratic values, attracting millions of spectators from across the country and around the world."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64c0c6b36c10da26d4fe2c44"
+  },
+  "city": "Kolkata",
+  "location": "Victoria Memorial",
+  "tag": "Heritage",
+  "liked": "115K",
+  "interested": "100K",
+  "overview": "The Victoria Memorial is an iconic monument in Kolkata, India, built in memory of Queen Victoria. Completed in 1921, it stands as a stunning example of Indo-Saracenic architecture. The memorial houses a vast collection of artifacts and art from the British colonial era, displaying India's rich history and culture. Surrounded by lush gardens, the white marble structure is a symbol of cultural heritage and a popular tourist destination. Its grandeur and historical significance make it a significant landmark in India's history.",
+  "eventHappening": "International Art Exhibition",
+  "aboutEvent": "Captivating art exhibition at Victoria Memorial, Kolkata, showcasing diverse masterpieces and cultural treasures.",
+  "recommendation": [
+    "Historical",
+    "Heritage",
+    "Spritual"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "The Main Building",
+      "desc": "The iconic white marble structure with a central dome, inspired by the Taj Mahal, houses a museum and galleries."
+    },
+    {
+      "title": "The Garden",
+      "desc": "The memorial is surrounded by lush green gardens, offering a serene and picturesque setting."
+    },
+    {
+      "title": "The Royal Gallery",
+      "desc": "An exhibition hall showcasing paintings, portraits, and artifacts related to British royalty and Indian history."
+    },
+    {
+      "title": "The Calcutta Gallery",
+      "desc": "A section dedicated to Kolkata's history, showcasing photographs, documents, and artifacts from the city's colonial past."
+    }
+  ],
+  "upComingEvents": [
+    {
+      "title": "Painting Workshop",
+      "desc": "The Panting Workshop at Victoria Memorial in Kolkata offers visitors a unique opportunity to engage in art and learn the traditional techniques of watercolor panting. Led by skilled artists, the workshop provides a hands-on experience to explore creativity while being inspired by the majestic surroundings of the iconic Victoria Memorial."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64c0c6df6c10da26d4fe2c45"
+  },
+  "city": "Kolkata",
+  "location": "Indian Mesuem",
+  "tag": "Educational",
+  "liked": "119K",
+  "interested": "100K",
+  "overview": "The Indian Museum, located in Kolkata, is the oldest and largest museum in India, founded in 1814. It houses an extensive collection of artifacts, art, and scientific exhibits spanning various fields, including archaeology, anthropology, geology, and fine arts. The museum's galleries display an impressive assortment of sculptures, ancient relics, rare coins, and traditional crafts, offering visitors a glimpse into India's rich cultural and historical heritage. The institution's commitment to research and education is reflected in its vast library and laboratory facilities. With its diverse and fascinating exhibits, the Indian Museum remains a significant cultural hub, preserving and disseminating knowledge for generations to come.",
+  "eventHappening": "Seminar on Indusvally cibilization ",
+  "aboutEvent": "Explore the ancient wonders of the Indus Valley Civilization at the Indian Museum's captivating seminar. Unravel the mysteries of this enigmatic civilization through artifacts, insights, and expert presentations.",
+  "recommendation": [
+    "Historical",
+    "Heritage",
+    "Educational"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "Art Galleries",
+      "desc": " Showcasing traditional and contemporary Indian art, paintings, and sculptures, representing various styles and periods."
+    },
+    {
+      "title": "Historical Exhibits",
+      "desc": "Displaying artifacts, relics, and documents from different periods of Indian history, offering insights into the country's rich past."
+    },
+    {
+      "title": "Archaeological Section",
+      "desc": "Featuring ancient artifacts, coins, pottery, and tools, shedding light on India's archaeological heritage."
+    },
+    {
+      "title": "Numismatic Section",
+      "desc": " Showcasing a collection of coins from different dynasties and eras, reflecting India's economic history."
+    }
+  ],
+  "upComingEvents": [
+    {
+      "title": "Workshop on archaeological servey",
+      "desc": "Archaeological survey workshop at Indian Museum: Unveiling the secrets of ancient artifacts, exploring historical treasures."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64c0c7086c10da26d4fe2c46"
+  },
+  "city": "Pune",
+  "location": "Raigad Fort",
+  "tag": "Historical",
+  "liked": "51K",
+  "interested": "100K",
+  "overview": "aigad Fort, located in Maharashtra, India, is a historic hill fortress with immense significance. Built in the 17th century, it served as the capital of the Maratha kingdom under Chhatrapati Shivaji Maharaj's rule. Perched atop a hill, the fort offers breathtaking panoramic views of the surrounding landscapes. Accessible through a challenging trek or a ropeway, it houses various structures like the Raj Bhavan, Takmak Tok (a cliff edge), and Jagdishwar Temple. The fort's architecture and strategic design reflect the Maratha military prowess. A symbol of courage and resilience, Raigad Fort stands as a testimony to India's glorious past and attracts history enthusiasts and tourists alike.",
+  "eventHappening": "Nothing is happen",
+  "aboutEvent": "",
+  "recommendation": [
+    "Historical",
+    "Heritage",
+    "Spritual"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "Fort Entrance (Maha Darwaja)",
+      "desc": " A massive gateway leading to the fort, showcasing impressive architecture and strength."
+    },
+    {
+      "title": "Takmak Tok",
+      "desc": "A cliff edge where Shivaji, the Maratha king, administered justice and delivered verdicts."
+    },
+    {
+      "title": "Jagdishwar Temple",
+      "desc": "An ancient temple dedicated to Lord Shiva, showcasing intricate carvings."
+    },
+    {
+      "title": "Hirkani Buruj",
+      "desc": "A bastion named after a courageous woman, Hirkani, who climbed the fort to meet her child."
+    }
+  ],
+  "upComingEvents": [
+    {
+      "title": "No upcoming Events",
+      "desc": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64c0c72d6c10da26d4fe2c47"
+  },
+  "city": "Murshidabad",
+  "location": "Hazarduari Palace",
+  "tag": "Historical",
+  "liked": "35K",
+  "interested": "100K",
+  "overview": "Hazarduari Palace, located in Murshidabad, West Bengal, India, is a magnificent historical edifice dating back to the 19th century. Built in 1837 by architect Duncan Macleod, the palace served as the residence of the Nawabs of Bengal. Its name Hazarduari, meaning a thousand doors, originates from the numerous doors adorning the structure, although only 100 are functional. The palace is an exquisite blend of Indo-European architectural styles and showcases an extensive collection of artifacts, including paintings, arms, furniture, and manuscripts, offering a captivating glimpse into the opulent lifestyle of the Nawabs. Today, Hazarduari Palace is a prominent museum and a symbol of Bengal's rich cultural heritage.",
+  "eventHappening": "Seminar on The Beauty of bengal",
+  "aboutEvent": "Join us for a captivating seminar on 'The Beauty of Bengal' at Hazarduari Palace, celebrating the rich heritage and splendor of Bengal. Don't miss this enchanting cultural journey!",
+  "recommendation": [
+    "Historical",
+    "Heritage",
+    "Spritual"
+  ],
+  "landscapeImg": "",
+  "portraitImg": "",
+  "noticablePlace": [
+    {
+      "title": "Hazarduari Museum",
+      "desc": "The museum inside the palace houses an impressive collection of artifacts, including weapons, paintings, photographs, and various items from the Nawabi era."
+    },
+    {
+      "title": "Nizamat Imambara",
+      "desc": "Adjacent to the palace, this grand structure is one of the largest Imambaras in India, known for its intricate design and religious significance."
+    },
+    {
+      "title": "Clock Tower",
+      "desc": "The palace boasts a prominent clock tower with a giant clock that strikes every hour, a rare feature during its time of construction."
+    },
+    {
+      "title": "Artillery Gallery",
+      "desc": "This section of the museum displays an array of vintage cannons, guns, and other weaponry."
+    }
+  ],
+  "upComingEvents": [
+    {
+      "title": "Cultural Fair",
+      "desc": "Hazarduari Palace hosts a vibrant Cultural Fair, celebrating the region's rich heritage with music, dance, art, and traditional crafts. A delightful showcase of local talent and traditions."
+    }
+  ]
+}]

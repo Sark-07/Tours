@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "64c0cc5f6c10da26d4fe2c6a"
+  },
+  "name": "Pritam Sarkar",
+  "phone": "9100011191",
+  "email": "pritam@gmail.com",
+  "password": "123456789"
+},
+{
+  "_id": {
+    "$oid": "64c0ccad6c10da26d4fe2c6b"
+  },
+  "name": "Bishal Ghosh",
+  "phone": "9145520157",
+  "email": "bishal@gmail.com",
+  "password": "123456"
+},
+{
+  "_id": {
+    "$oid": "64c0ccb16c10da26d4fe2c6c"
+  },
+  "name": "Ram Das",
+  "phone": "9111191111",
+  "email": "ram@gmail.com",
+  "password": "ram12345"
+}]

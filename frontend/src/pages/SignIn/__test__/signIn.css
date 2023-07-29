@@ -1,0 +1,162 @@
+@font-face {
+    font-family: aura;
+    src: url('../../../assets/fonts/aurella.script.woff');
+}
+
+@font-face {
+    font-family: cream;
+    src: url('../../../assets/fonts/Cream.Cake.woff');
+}
+label{
+    font-size: 0.9rem;
+}
+
+.sign-in {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.sign-in>.right {
+    background-image: url('https://images.unsplash.com/photo-1513682322455-ea8b2d81d418?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fG5hdHVyZXxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 2.5em 8em 5em;
+}
+
+.sign-in>.left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.sign-in>.left>.logo {
+    top: 0.5em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.left>.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.center>.welcome-text {
+    text-align: center;
+
+}
+
+.center>.welcome-text>h1 {
+    font-family: aura;
+}
+
+.center>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+[type='email'],
+[type='password'] {
+    padding: 0.5em;
+    border: 0.1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+::placeholder {
+    padding-left: 0.5em;
+    opacity: 0.8;
+}
+
+.remember-forget-password {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 0.5em;
+}
+
+.remember-me {
+    display: flex;
+    gap: 0.25em;
+}
+
+.login-google {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.login-google>.google-btn {
+    background-color: transparent;
+    border: 0.2px solid rgba(0, 0, 0, 0.437);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.google-btn>.google-logo {
+    font-size: 1.5rem;
+}
+
+.center>form>.sign-up-link {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.sign-up-link>span {
+    text-decoration: underline;
+    color: #646cff;
+}
+
+.right>button {
+    outline: none;
+    margin-left: auto;
+    width: 10rem;
+    background-color: transparent;
+    border: 0.5px solid rgba(240, 248, 255, 0.449);
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+.right>.right-text {
+    width: 100%;
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+.right-text>p {
+    font-size: 2.5rem;
+    font-family: cream;
+    letter-spacing: 0.01em;
+    padding-right: 3em;
+}
+
+.right-text>p>span {
+    font-size: 2.75rem;
+}

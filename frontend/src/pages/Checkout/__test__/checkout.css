@@ -1,0 +1,295 @@
+.checkout{
+    font-weight: 400;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.checkout-header{
+    background-color: aliceblue;
+    color: black;
+    width: 100%;
+    height: 8vh;
+    padding: .5em 2em;
+}
+
+.ticket-details{
+    /* color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ticket-details > h3{
+    font-weight: 500;
+}
+
+.ticket-details > span{
+    display: flex;
+    gap: 0.25em;
+    font-size: 0.8rem;
+}
+
+.booking-details-section{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 2rem;
+    padding: 2em 0;
+    max-width: 1200px;
+    margin-inline: auto;
+    place-content: center;
+    grid-auto-rows: 84vh;
+}
+
+.booking-details-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
+}
+.banner-img{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    /* height: auto; */
+}
+/* .banner-img > img{
+    object-fit: contain;
+} */
+.essentials-text{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+
+.essentials-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    overflow-y: auto;
+    height: 33rem;
+}
+
+
+.item{
+    background-color: #f0f8ff2b;
+    border-radius: 5px;
+    padding: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    flex-shrink: 0;
+}
+.item-left-img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* flex-basis: calc(20% - 0.5em) */
+   
+}
+
+.item-right-content{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 80%;
+    gap: 1em;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25em;
+
+}
+
+
+.item-details > h3{
+    font-weight: 600;
+}
+.item-details > p{
+    margin-top: -5px;
+    font-size: 0.8rem;
+    opacity: .7;
+}
+
+.cost-add-btn{
+    width: 100%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bucket-list > a{
+    color: aliceblue;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25em;
+}
+.view-btn{
+
+    padding: 0.25em 1em;
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: scale 200ms ease;
+}
+.view-btn:hover{
+
+    scale: 1.05;
+}
+
+.booking-details-right{
+    color: aliceblue;
+}
+
+.booking-details-summary{
+    border-radius: 5px;
+    background-color: #f0f8ff2b;
+    
+}
+
+.inner{
+    padding: 1.5em 2em;
+}
+
+.booking-summary{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.booking-summary > hr{
+    opacity: .2;
+}
+.adult-ticket,
+.children-ticket,
+.convenience-fee{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.convenience-fee > span:first-child{
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.sub-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contribution{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 1em;
+    padding: 1em 1em;
+    margin-block: 1em;
+    background-color: #fffcdc;
+    color: black;
+}
+
+.contribution-logo-title{
+display: flex;
+align-items: center;
+gap: 0.25em;
+}
+
+.contribution-logo-title > h3{
+    font-size: 1.1rem;
+}
+.contribution-logo-title > svg{
+    font-size: 1.5rem;
+}
+.contribution > p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.contribution-amount{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more{
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.current-state{
+    font-size: 0.8rem;
+}
+
+.state{
+    color: #ff005a;
+}
+
+.amount-payable{
+    padding: .75em 2em;
+    border-radius: 0 0 5px 5px;
+    color: black;
+    background-color: #1ce783;
+    /* margin-block: 1em; */
+    display: flex;
+    justify-content: space-between;
+}
+.icon-ticket{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5em;
+    align-items: center;
+}
+.icon-ticket > svg{
+    font-size: 1.5rem;
+}
+
+.ticket-type{
+    /* padding-inline: 2em; */
+    margin-block: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ticket-type > p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.proceed{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.proceed > p{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: .7rem;
+    justify-content: center;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em 2em;
+    background-color: #1ce783;
+    color: black;
+    border-radius: 5px;
+}

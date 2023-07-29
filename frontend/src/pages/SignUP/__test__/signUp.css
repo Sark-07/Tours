@@ -1,0 +1,199 @@
+@font-face {
+    font-family: aura;
+    src: url('../../../assets/fonts/aurella.script.woff');
+}
+
+@font-face {
+    font-family: cream;
+    src: url('../../../assets/fonts/Cream.Cake.woff');
+}
+label{
+    font-size: 0.9rem;
+}
+
+.sign-up {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.sign-up>.right {
+    background-image: url('https://cdn.pixabay.com/photo/2021/07/24/15/47/venice-6489813_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 2.5em 8em 5em;
+    position: relative;
+}
+
+.sign-up>.right::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(3px);
+
+}
+
+.sign-up>.left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.sign-up>.left>.logo {
+    top: 0.5em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.left>.sign-up-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.sign-up-center>.welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+
+}
+
+.sign-up-center>.welcome-text>h1 {
+    font-family: poppins;
+}
+
+.sign-up-center>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form>.google-btn {
+    background-color: transparent;
+    border: 0.2px solid rgba(0, 0, 0, 0.437);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.google-btn>.google-logo {
+    font-size: 1.5rem;
+}
+
+.divider-or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+    margin-block: 1em 0.5em;
+}
+
+.divider-or>.line {
+    height: 1px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.name-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75em;
+}
+
+.name-phone>.name,
+.phone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+[type='email'],
+[type='password'],
+[type='text'] {
+    padding: 0.5em;
+    border: 0.1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black !important;
+}
+
+::placeholder {
+    padding-left: 0.5em;
+    opacity: 0.8;
+}
+
+.login-google {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+.sign-up-center>form>.sign-up-link {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.sign-up-link>span > .link {
+    text-decoration: underline;
+    color: #646cff;
+}
+
+.right>button {
+    outline: none;
+    margin-left: auto;
+    width: 10rem;
+    background-color: transparent;
+    border: 0.5px solid rgba(240, 248, 255, 0.449);
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+.right>.right-text {
+    width: 100%;
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+.right-text>p {
+    font-size: 2.5rem;
+    font-family: cream;
+    letter-spacing: 0.01em;
+    padding-right: 3em;
+}
+
+.right-text>p>span {
+    font-size: 2.75rem;
+}

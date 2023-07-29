@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "64c0c9826c10da26d4fe2c54"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal"
+},
+{
+  "_id": {
+    "$oid": "64c0ca8c6c10da26d4fe2c56"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal"
+},
+{
+  "_id": {
+    "$oid": "64c0cabc6c10da26d4fe2c57"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal"
+},
+{
+  "_id": {
+    "$oid": "64c0cada6c10da26d4fe2c58"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal"
+},
+{
+  "_id": {
+    "$oid": "64c0caed6c10da26d4fe2c59"
+  },
+  "city": "Agra",
+  "place": "Taj Mahal"
+},
+{
+  "_id": {
+    "$oid": "64c0cb136c10da26d4fe2c5a"
+  },
+  "city": "Delhi",
+  "place": "Red Fort"
+},
+{
+  "_id": {
+    "$oid": "64c0cb446c10da26d4fe2c5b"
+  },
+  "city": "Delhi",
+  "place": "Red Fort"
+},
+{
+  "_id": {
+    "$oid": "64c0cb506c10da26d4fe2c5c"
+  },
+  "city": "Delhi",
+  "place": "Red Fort"
+},
+{
+  "_id": {
+    "$oid": "64c0cb5e6c10da26d4fe2c5d"
+  },
+  "city": "Delhi",
+  "place": "Red Fort"
+},
+{
+  "_id": {
+    "$oid": "64c0cb666c10da26d4fe2c5e"
+  },
+  "city": "Delhi",
+  "place": "Red Fort"
+},
+{
+  "_id": {
+    "$oid": "64c0cb7b6c10da26d4fe2c5f"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memeorial"
+},
+{
+  "_id": {
+    "$oid": "64c0cbab6c10da26d4fe2c60"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memorial"
+},
+{
+  "_id": {
+    "$oid": "64c0cbff6c10da26d4fe2c61"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memorial"
+},
+{
+  "_id": {
+    "$oid": "64c0cc0b6c10da26d4fe2c62"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memorial"
+},
+{
+  "_id": {
+    "$oid": "64c0cc116c10da26d4fe2c63"
+  },
+  "city": "Kolkata",
+  "place": "Victoria Memorial"
+},
+{
+  "_id": {
+    "$oid": "64c0cc1a6c10da26d4fe2c64"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem"
+},
+{
+  "_id": {
+    "$oid": "64c0cc426c10da26d4fe2c65"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem"
+},
+{
+  "_id": {
+    "$oid": "64c0cc476c10da26d4fe2c66"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem"
+},
+{
+  "_id": {
+    "$oid": "64c0cc4d6c10da26d4fe2c67"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem"
+},
+{
+  "_id": {
+    "$oid": "64c0cc536c10da26d4fe2c68"
+  },
+  "city": "Kolkata",
+  "place": "Indian Mesuem"
+}]
