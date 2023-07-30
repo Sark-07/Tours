@@ -2,6 +2,21 @@ const mongoose = require('mongoose')
 
 const schema = new mongoose.Schema({
 
+    item: {
+        type: Array
+    },
+    visitorCountry: {
+        type: String
+    },
+    city: {
+        type: String
+    },
+    place: {
+        type: String
+    },
+    country: {
+        type: String
+    },
     noOfAdult: {
         type: Number
     },
@@ -23,9 +38,6 @@ const schema = new mongoose.Schema({
     nationality: {
         type: String
     },
-    country: {
-        type: String
-    },
     dateTime: {
         type: String
     },
@@ -33,6 +45,12 @@ const schema = new mongoose.Schema({
         type: String
     },
     phone: {
+        type: String
+    },
+    transactionDate: {
+        type: String
+    },
+    transactionId: {
         type: String
     }
 

@@ -1,8 +1,12 @@
 import React from 'react';
 import { GiAbstract084 } from 'react-icons/gi';
 import '../components/__test__/navbar.css';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
+  const { token } = useAuth();
+
   return (
     <>
       <nav>
@@ -29,9 +33,9 @@ const Navbar = () => {
             <a href='#'>Activites</a>
           </li>
           <li>
-            <a href='#' className='sign-up-btn'>
-              Sign Up
-            </a>
+            <Link to={token ? '/profile' : 'signin'} className='sign-up-btn'>
+              {token ? 'Profile' : 'Sign In'}
+            </Link>
           </li>
         </ul>
       </nav>

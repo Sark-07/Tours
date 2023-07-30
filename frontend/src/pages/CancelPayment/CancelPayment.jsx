@@ -1,8 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useLocation, Navigate} from 'react-router-dom'
 import {MdCancel} from 'react-icons/md'
 import './CancelPayment.module.css/cancelPayment.css'
 const CancelPayment = () => {
+  const search = useLocation().search;
+  const query = new URLSearchParams(search).get('det');
+  if (!query) {
+    return <Navigate to={'/'} />
+  }
   return (
     <div className="main-holder">
           <div className="holder">
@@ -13,7 +18,7 @@ const CancelPayment = () => {
                 {/* <p className="">Ticket details have been sent to your email.</p> */}
                 <p className=''> Please try booking tickets again.</p>
                 <div className="btn-holder">
-                    <Link to='/' className="link">
+                    <Link to='/' className="cancel-link">
                         Home 
                    </Link>
                 </div>

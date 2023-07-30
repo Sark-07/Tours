@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import { useFetch } from '../../Hooks/useFetch';
 import SearchItem from './SearchItem';
 
-const Hero = () => {
+const Hero = ({data}) => {
 
   const [search, setSearch] = useState('')
-  const {data} = useFetch('http://localhost:3000/tours/api/places');
-  const result = data.filter((item) => {
+  const result = data && data.filter((item) => {
 
     return search && item && item.place && item.place.toLowerCase().includes(search)
 

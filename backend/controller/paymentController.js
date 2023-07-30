@@ -2,7 +2,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const paymentController = async (req, res) => {
 
     const { item } = req.body;
-    console.log(item);
+    req.body.transactionId = String(btoa(item))
+    console.log(req.body);
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
         line_items: item.map((items) => {
@@ -18,8 +19,8 @@ const paymentController = async (req, res) => {
             }
         }),
         mode: "payment",
-        success_url: "http://localhost:5173/success",
-        cancel_url: "http://localhost:5173/cancel",
+        success_url: `http://localhost:5173/success?det=${btoa(JSON.stringify(req.body))}`,
+        cancel_url: `http://localhost:5173/cancel?Id=${btoa(item)}`,
     });
     res.json({ url: session.url });
 

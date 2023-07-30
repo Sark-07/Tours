@@ -28,7 +28,8 @@ const signUp = async (req, res) => {
 
         const newUser = await user.create(payload)
 
-        res.status(201).json({ message: 'User signed up.', newUser })
+
+        res.status(201).json({ success: true, message: 'User signed up.' })
 
     }
 
@@ -56,9 +57,14 @@ const signIn = async (req, res) => {
         return res.status(404).json({ message: 'Wrong password.' })
     }
 
-    const token = await jwt.sign({ _id: findUser._id }, process.env.JWT_SECRET, { expiresIn: '1d' })
+    const token = jwt.sign({ _id: findUser._id }, process.env.JWT_SECRET, { expiresIn: '1d' })
 
-    res.status(201).json({message: 'User signed in.', user: {name: findUser.name, email: findUser.email}, token})
+    res.cookie(findUser.email, token, {
+        expires: new Date(Date.now() + 900000),
+        httpOnly: true
+    })
+
+    res.status(201).json({ success: true, message: 'User signed in.', user: { id: findUser._id, name: findUser.name, email: findUser.email, phone: findUser.phone }, token })
 
 
 }

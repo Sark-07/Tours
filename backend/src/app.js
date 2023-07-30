@@ -14,6 +14,8 @@ app.use(cors(
     {origin: '*'}
 ))
 
+
+
 // parsing all json and url encoded data
 app.use(express.json())
 app.use(express.urlencoded({extended: false}));
@@ -28,7 +30,7 @@ app.use('/tours/api', paymentRoute)
 // global error handler
 app.use(function (err, req, res, next){
 
-    console.log(err.message);
+    console.log(err);
     res.status(err.statusCode || 500).json({message: err.message || 'Internal server error.'})
 })
 

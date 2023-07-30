@@ -5,14 +5,16 @@ import CardsSection from './CardsSection';
 import Promo from './Promo';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import { useFetch } from '../../Hooks/useFetch';
 import './__test__/home.css'
 const Home = () => {
+  const {data} = useFetch('http://localhost:3000/tours/api/places');
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero data={data}v/>
       <MidHero />
-      <CardsSection />
+      <CardsSection data={data} />
       <Promo />
       <Footer />
     </>

@@ -45,7 +45,7 @@
     text-align: center;
     padding: 2.5em 0;
 }
-.success-btn-holder > .link{
+.success-btn-holder > .success-link{
     padding: 0.75em 3em;
     background-color: #1ce783;
     border-radius: 5px;
@@ -54,7 +54,7 @@
 
 }
 
-.success-btn-holder > .link:hover{
+.success-btn-holder > .success-link:hover{
     background-color: #00ff80;
     
 }

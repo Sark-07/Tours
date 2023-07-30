@@ -1,7 +1,39 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './Thankyou.module.css/thankyou.css'
+import React, { useEffect } from 'react'
+import {Link, Navigate, useLocation} from 'react-router-dom'
+import './SuccessPayment.module.css/successPayment.css'
 const Thankyou = () => {
+
+  // const [isRendered, setIsRendered] = useState(false)
+  const search = useLocation().search;
+  const query = new URLSearchParams(search).get('det');
+  if (!query) {
+    return <Navigate to={'/'} />
+  }
+
+
+  const data = JSON.parse(atob(query))
+  const url = 'http://localhost:3000/tours/api/booktickets'
+  
+  
+  useEffect(() => {
+    
+    let isCancelled = false
+    const postBookingDetails = async () => {
+      if (!isCancelled) {
+        
+        if(localStorage.getItem('bookTickets')){
+
+          const {data: response} = await axios.post(url, data)
+          localStorage.removeItem('bookTickets')
+          console.log(response);
+        }
+      }
+    }
+    
+
+    return (() => {postBookingDetails(), isCancelled = true})
+
+}, [url])
 
   return (
     <div className="main-holder">
@@ -17,7 +49,7 @@ const Thankyou = () => {
                 <p className="">Ticket details have been sent to your email.</p>
                 <p className=''> Have a great day!  </p>
                 <div className="success-btn-holder">
-                    <Link to='/' className="link">
+                    <Link to='/' className="success-link">
                         Home 
                    </Link>
                 </div>

@@ -6,10 +6,10 @@ const DetailsHero = ({landscapeImg, interested, recommendation, portraitImg, eve
   const navigation = useNavigate()
   return (
     <>
-    <div className="details-hero">
+    <div className="details-hero" style={{backgroundImage: "url('"+landscapeImg+"')"}}>
             <div className="details-left">
                 <div className="image">
-                    <img src="https://images.unsplash.com/photo-1576137056125-b98071fda628?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkYWtoJTIwdG91cmlzbXxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img src={portraitImg} alt={location} />
                 </div>
                 <div className="loc-info">
                     <div className="title-tag">

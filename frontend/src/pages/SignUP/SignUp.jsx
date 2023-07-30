@@ -3,10 +3,12 @@ import { GiAbstract084 } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
 import { validateEmail } from '../../utils/validateEmail';
 import { validatePhone } from '../../utils/validatePhone';
-import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast'
+import { Link, useNavigate } from 'react-router-dom';
 import './__test__/signUp.css';
 
 const SignUp = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -50,12 +52,21 @@ const SignUp = () => {
           password: password
         };
   
-        const {data: {message}} = await axios.post(url, payload)
-        console.log(message);
+        const {data} = await axios.post(url, payload)
+
+        if (data.success){
+          toast.success(data.message)
+          setTimeout(() => {
+            navigate('/signin')
+          }, 2000);
+        }
+
+
       }
     } catch (error) {
 
       setAlreadyExists({...alreadyExists, status: true, message: error.response.data.message})
+      toast.error(alreadyExists.message)
       console.log(error);
     }
   };

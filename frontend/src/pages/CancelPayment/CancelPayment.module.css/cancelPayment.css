@@ -45,7 +45,7 @@
     text-align: center;
     padding: 2.5em 0;
 }
-.btn-holder > .link{
+.btn-holder > .cancel-link{
     padding: 0.75em 3em;
     background-color: crimson;
     border-radius: 5px;
@@ -54,7 +54,7 @@
 
 }
 
-.link:hover{
+.cancel-link:hover{
     background-color: rgb(245, 10, 57);
     
 }
