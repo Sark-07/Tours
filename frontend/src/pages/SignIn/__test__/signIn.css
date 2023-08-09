@@ -41,6 +41,7 @@ label{
 }
 
 .sign-in>.left>.logo {
+    color: black;
     top: 0.5em;
     left: 1em;
     display: flex;
@@ -76,6 +77,7 @@ label{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    position: relative;
 }
 
 .sign-in-email,
@@ -86,6 +88,15 @@ label{
     border-radius: 5px;
     color: black !important;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.password > .password-eye{
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
 }
 
 ::placeholder {

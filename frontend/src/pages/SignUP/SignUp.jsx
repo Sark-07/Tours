@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GiAbstract084 } from 'react-icons/gi';
+import { GiAbstract084, GiAngryEyes } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
 import { validateEmail } from '../../utils/validateEmail';
 import { validatePhone } from '../../utils/validatePhone';
@@ -16,6 +16,7 @@ const SignUp = () => {
   const [validEmail, setValidEmail] = useState(false);
   const [validPhone, setValidPhone] = useState(false);
   const [shortPass, setShortPass] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
   const [alreadyExists, setAlreadyExists] = useState({status: false, message: ''})
 
   useEffect(() => {
@@ -129,11 +130,12 @@ const SignUp = () => {
             <div className='password'>
               <label htmlFor='password' style={{color: shortPass && 'crimson'}}>{shortPass ? 'Password length must be greater than 3' : 'Password'}</label>
               <input
-                type='password'
+                type={showPassword ? 'text' : 'password'}
                 placeholder='Enter your password'
                 required
                 onChange={(e) => setPassword(e.target.value)}
               />
+               <GiAngryEyes onClick={() => setShowPassword(!showPassword)} className='password-eye' style={password && {display: 'block'}}/>
             </div>
             <div className='login-google'>
               <button>Sign Up</button>

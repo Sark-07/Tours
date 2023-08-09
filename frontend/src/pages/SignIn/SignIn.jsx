@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast'
-import {useNavigate, Navigate} from 'react-router-dom'
-import { GiAbstract084 } from 'react-icons/gi';
+import {Navigate} from 'react-router-dom'
+import { GiAbstract084, GiAngryEyes } from 'react-icons/gi';
 import { FcGoogle } from 'react-icons/fc';
 import './__test__/signIn.css';
 import { validateEmail } from '../../utils/validateEmail';
@@ -11,14 +11,13 @@ const SignIn = () => {
 
    const [email, setEmail] = useState('')
    const [password, setPassword] = useState('')
+   const [showPassword, setShowPassword] = useState(false)
    const [validEmail, setValidEmail] = useState(false);
    const {isAuthenticated, login} = useAuth()
   //  const [auth, setauth] = useAuth()
-   const navigate = useNavigate()
 
    if (isAuthenticated()){
 
-    console.log('hitehe');
     return <Navigate to={'/'}/>
 
    }
@@ -45,7 +44,7 @@ const SignIn = () => {
           // localStorage.setItem('token', data.token)
           // console.log(data.user, data.token, auth);
           setTimeout(() => {
-            login(data.token, '/')
+            login({token: data.token, user: data.user}, '/')
           }, 2000);
         }
       }
@@ -78,10 +77,11 @@ const SignIn = () => {
             <div className='password'>
               <label htmlFor='password'>Password</label>
               <input className='sign-in-password'
-                type='password'
+                type={showPassword ? 'text' : 'password'}
                 placeholder='Enter your password'
                 required onChange={(e) => setPassword(e.target.value)}
               />
+              <GiAngryEyes onClick={() => setShowPassword(!showPassword)} className='password-eye' style={password && {display: 'block'}}/>
             </div>
             <div className='remember-forget-password'>
               <div className='remember-me'>

@@ -12,6 +12,7 @@ import Test from './pages/Home/__test__/Test';
 import SuccessPayment from './pages/SuccessPayment/SuccessPayment'
 import CancelPayment from './pages/CancelPayment/CancelPayment';
 import {ProtectedRoute} from './context/ProtectedRoute'
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
       <Route path='signup' element={<SignUp/>}/>
       <Route path='location' element={<Details/>}/>
       <Route path='checkout' element={<ProtectedRoute><Checkout/></ProtectedRoute>}/>
-      <Route path='buytickets' element={<BuyTickets/>}/>
-      <Route path='success' element={<SuccessPayment/>}/>
-      <Route path='cancel' element={<CancelPayment/>}/>
-      <Route path='test' element={<Test/>}/>
+      <Route path='buytickets' element={<ProtectedRoute><BuyTickets/></ProtectedRoute>}/>
+      <Route path='success' element={<ProtectedRoute><SuccessPayment/></ProtectedRoute>}/>
+      <Route path='cancel' element={<ProtectedRoute><CancelPayment/></ProtectedRoute>}/>
+      <Route path='test' element={<Dashboard/>}/>
       <Route path='*' element={<Error/>}/>
     </Routes>
     </BrowserRouter>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
 import {FaPatreon} from 'react-icons/fa'
-import {GiAbstract084} from 'react-icons/gi'
+import {GiAbstract019} from 'react-icons/gi'
 import './__test__/footer.css'
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-top">
             <div>
                 <a href="/" className="footer-logo">
-                <GiAbstract084 className='footer-logo-icon'/>
+                <GiAbstract019 className='footer-logo-icon'/>
                 <h6>Tours</h6>
                 </a>
             </div>

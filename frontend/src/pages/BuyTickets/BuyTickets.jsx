@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import {useLocation, Navigate, useNavigate} from 'react-router-dom'
 import Navbar from '../../components/Navbar'
+import toast from 'react-hot-toast'
 import { useFetch } from '../../Hooks/useFetch'
 import {PiMountainsDuotone} from 'react-icons/pi'
 import {BsFillCircleFill} from 'react-icons/bs'
 import Loader from '../../components/Loader'
+import { validateEmail } from '../../utils/validateEmail';
+import { validatePhone } from '../../utils/validatePhone';
 import './BuyTickets.module.css/buyTickets.css'  
   
   const BuyTickets = () => {
@@ -18,7 +21,6 @@ import './BuyTickets.module.css/buyTickets.css'
     const [noOfFemaleAdult, setNoOfFemaleAdult] = useState(0)
     const [noOfFemalechildren, setNoOfFemaleChildren] = useState(0)
     const [date, setDate] = useState(new Date().toJSON().slice(0, 10))
-    const [nxtDates, setNxtDates] = useState(date)
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [loader, setLoader] = useState(false)
@@ -30,42 +32,60 @@ import './BuyTickets.module.css/buyTickets.css'
         return <Navigate to={'/'}/>
     }
 
-
-    const { data: getTicket } = useFetch(`http://localhost:3000/tours/api/tickets?query=${query}`);
-    const {data} = useFetch(`http://localhost:3000/tours/api/placedetails?location=${query}`)
-    // console.log(getTicket);
+    const { data: getTicket, loading: load } = useFetch(`http://localhost:3000/tours/api/tickets?query=${query}`);
+    const {data, loading} = useFetch(`http://localhost:3000/tours/api/placedetails?location=${query}`)
     const details = data[0]
-
-    const url = 'http://localhost:3000/tours/api/booktickets'
     const handleSubmit = async (e) => {
-
+        
+        let ok = true;
         e.preventDefault()
-       try {
-        const payload = {
-            visitorCountry: country,
-            city: details.city,
-            country: 'India',
-            place: query,
-            noOfFemaleAdult: noOfFemaleAdult,
-            noOfFemalechildren: noOfFemalechildren,
-            noOfMaleAdult: noOfMaleAdult,
-            noOfMaleChildren: noOfMaleChildren,
-            adultVisitors: adultVisitors,
-            childrenVisitors: childrenVisitors,
-            nationality: nationality,
-            date: date,
-            email: email,
-            phone: phone
-        }
-        localStorage.setItem('bookTickets', JSON.stringify(payload))
-        // console.log(payload);
-        // const response =  await axios.post(url, payload) 
-        setLoader(true)
+       
+        try {
 
-        setTimeout(() => {
-            // console.log(hi);
-            navigate(`/checkout?query=${query}&adults=${adultVisitors}&children=${childrenVisitors}`)
-        }, 2000);
+        if (validateEmail(email) == null) {
+            ok = false
+           toast.error('Invalid email type.')
+        }
+        else if (validatePhone(phone) == null) {
+            ok = false
+            toast.error('Invalid phone number type.')
+          }
+        else if ((Number(noOfFemaleAdult) + Number(noOfMaleAdult)) != Number(adultVisitors)){
+            ok = false
+            toast.error('Sum of the no of male adults and female adults should be equal to the total adult no of visitors')
+        }
+        else if ((Number(noOfMaleChildren) + Number(noOfFemalechildren)) != Number(childrenVisitors)){
+            ok = false
+            toast.error('Sum of the no of male children and female children should be equal to the total no of children visitors')
+        }
+       
+        if(ok){
+
+            const payload = {
+                visitorCountry: country,
+                city: details.city,
+                country: 'India',
+                place: query,
+                noOfFemaleAdult: noOfFemaleAdult,
+                noOfFemalechildren: noOfFemalechildren,
+                noOfMaleAdult: noOfMaleAdult,
+                noOfMaleChildren: noOfMaleChildren,
+                adultVisitors: adultVisitors,
+                childrenVisitors: childrenVisitors,
+                nationality: nationality,
+                date: date,
+                email: email,
+                phone: phone
+            }
+            localStorage.setItem('bookTickets', JSON.stringify(payload))
+            setLoader(true)
+    
+            setTimeout(() => {
+                
+                navigate(`/checkout?query=${query}&adults=${adultVisitors}&children=${childrenVisitors}`)
+            }, 2000);
+        }
+
        } catch (error) {
         console.log(error);
        }
@@ -83,8 +103,8 @@ import './BuyTickets.module.css/buyTickets.css'
     }, [nationality])
 
 
-    if (loader) return <Loader/>
-  if (details && !loader) return (
+    if (load || loading || loader) return <Loader/>
+  if (details) return (
     <>
     <Navbar/>
     <div className="buy-tickets">
@@ -168,21 +188,21 @@ import './BuyTickets.module.css/buyTickets.css'
                     </div>
                     <button className='tickets-from-submit' style={(Object.keys(getTicket).length == 0) ? {opacity: 0.7} : {opacity: 1}}> {(Object.keys(getTicket).length != 0) ? 'Submit' : 'Ticket Not Available'}</button>
                 </div>
-                <div className="isCrowdy" style={(date.slice(0, 10).split("-").reverse().join("-") == '03-08-2023') ? {display: 'flex'} : {display: 'none'}}>
+                <div className="isCrowdy" style={(date.slice(0, 10).split("-").reverse().join("-") == '10-08-2023') ? {display: 'flex'} : {display: 'none'}}>
                     <h2>Too Much Crowdy On {date.slice(0, 10).split("-").reverse().join("-")}.</h2>
                     <h3>You can try booking tickets for below dates.</h3>
                     <div className="available-dates">
                     <span className='date-status'>
-                    05-08-2023
+                    12-08-2023
                     </span>
                     <span className='date-status'>
-                    06-08-2023
+                    13-08-2023
                     </span>
                     <span className='date-status'>
-                    07-08-2023
+                    15-08-2023
                     </span>
                     <span className='date-status'>
-                    08-08-2023
+                    16-08-2023
                     </span>
                     </div>
                 </div>

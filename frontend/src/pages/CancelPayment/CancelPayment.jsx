@@ -4,10 +4,11 @@ import {MdCancel} from 'react-icons/md'
 import './CancelPayment.module.css/cancelPayment.css'
 const CancelPayment = () => {
   const search = useLocation().search;
-  const query = new URLSearchParams(search).get('det');
+  const query = new URLSearchParams(search).get('Id');
   if (!query) {
     return <Navigate to={'/'} />
   }
+  localStorage.removeItem('bookTickets');
   return (
     <div className="main-holder">
           <div className="holder">

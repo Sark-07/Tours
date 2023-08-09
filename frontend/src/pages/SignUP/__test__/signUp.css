@@ -53,6 +53,7 @@ label{
 }
 
 .sign-up>.left>.logo {
+    color: black;
     top: 0.5em;
     left: 1em;
     display: flex;

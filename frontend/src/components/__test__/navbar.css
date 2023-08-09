@@ -7,7 +7,7 @@
     text-decoration: none;
   } */
 nav{
-    z-index: 99;    
+    z-index: 999999;    
     position: absolute;
     background: transparent;
     height: 10vh;
@@ -69,3 +69,67 @@ select{
 option{
     color: black;
 }
+
+
+/* profile menus */
+.profile-menus{
+    position: relative;
+    padding-block: 1em;
+    /* transition: display 1s ease; */
+}
+
+/* .profile-menus .profile-container{
+    display: none;
+} */
+.profile-parent{
+    display: none;
+    position: absolute;
+    right: -0.75em;
+    top: 3em;
+    z-index: 99999;
+}
+.profile-menus:hover  .profile-parent{
+    color: aliceblue;
+    display: block;
+}
+.profile-container{
+    /* visibility: hidden; */
+    border: 0.1px solid rgba(240, 248, 255, 0.427);
+    width: 15rem;
+    height: fit-content;
+    padding: 1em 1.2em;
+    background-color: #282a2b;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 0.8rem;
+
+}
+.profile-menus > li > a:hover{
+    color: #a1a1a1;
+}
+
+.profile-container > .border{
+    opacity: 0.4;
+    height: 1px;
+    background-color: #1ce783;
+}
+.profile-items{
+    width: fit-content;
+    padding: 0.15em 0;
+    cursor: pointer;
+    transition: border-bottom 100ms ease;
+}
+
+.profile-items:hover{
+    border-bottom: 3px solid #1ce783;
+}
+
+.name-email{
+    padding: 0.15em 0;
+}
+.profile-email{
+    color: #a1a1a1;
+}
+

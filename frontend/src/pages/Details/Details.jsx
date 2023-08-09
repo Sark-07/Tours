@@ -17,7 +17,6 @@ const Details = () => {
   let {data, loading} = useFetch(`http://localhost:3000/tours/api/placedetails?location=${query}`)
   
   let details = data[0]
-
 if (loading) {
   return <Loader/>
 }

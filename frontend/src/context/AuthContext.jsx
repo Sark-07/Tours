@@ -7,11 +7,12 @@ import { Navigate } from "react-router-dom";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [token, setToken] = useState(localStorage.getItem("token") || null);
+  const [token, setToken] = useState(JSON.parse(localStorage.getItem("token")) || null);
 
+  // console.log(token);
   const login = (token, linkTo) => {
     setToken(token);
-    localStorage.setItem("token", token);
+    localStorage.setItem("token", JSON.stringify(token));
     console.log(token);
     <Navigate to={linkTo} />;
     // navigate("");
@@ -22,7 +23,7 @@ const AuthProvider = ({ children }) => {
     localStorage.removeItem("token");
     <Navigate to="/" replace />;
   };
-
+  
   const isAuthenticated = () => {
     if (!token) {
       // If token is not available, the user is not authenticated
@@ -30,12 +31,13 @@ const AuthProvider = ({ children }) => {
     }
 
     try {
-      const decodedToken = jwtDecode(token);
+      const decodedToken = jwtDecode(token.token);
       const currentTime = Date.now() / 1000;
-
+      
       // Check if the token is expired
       if (decodedToken.exp < currentTime) {
-        return false;
+        localStorage.removeItem("token");     
+        <Navigate to="/signin" replace />;
       }
 
       // Token is valid and not expired

@@ -1,13 +1,16 @@
-import { Navigate } from "react-router-dom";
-import { useAuth } from "./AuthContext";
-import PropTypes from "prop-types";
+import { Navigate } from 'react-router-dom';
+import { useAuth } from './AuthContext';
+import PropTypes from 'prop-types';
+import toast from 'react-hot-toast';
+import { useEffect } from 'react';
 
 export const ProtectedRoute = ({ children }) => {
   const { isAuthenticated } = useAuth();
-  // console.log(isAuthenticated());
+
   if (!isAuthenticated()) {
     // user is not authenticated
-    return <Navigate to="/" />;
+    toast.error('Please Login!');
+    return <Navigate to='/signin' />;
   }
   return children;
 };

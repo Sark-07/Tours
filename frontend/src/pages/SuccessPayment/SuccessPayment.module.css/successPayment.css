@@ -58,3 +58,18 @@
     background-color: #00ff80;
     
 }
+.qr-bg{
+    background: inherit;
+    padding: 1em;
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.qr{
+    height: 18rem;
+    width: 18rem;
+    background-color: white;
+    padding: 1em;
+}
